@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+
+    
+  </head>
+  <body>
+    <h1>PLANT CARE</h1>
+    <div class="form">
+      <h4>Join us</h4>
+      <!-- Username -->
+      <div class="username">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Write your username"
+        />
+      </div>
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Write your email"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="pass">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+      </div>
+
+      <!-- Location -->
+      <div class="location">
+        <label for="location">Location</label>
+        <select name="location" id="location">
+          <option value="">Select a location</option>
+          <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+          <option value="Kochi">Kochi</option>
+          <option value="Kollam">Kollam</option>
+          <option value="Thrissur">Thrissur</option>
+          <option value="Kozhikode">Kozhikode</option>
+          <option value="Alappuzha">Alappuzha</option>
+          <option value="Kannur">Kannur</option>
+          <option value="Palakkad">Palakkad</option>
+          <option value="Malappuram">Malappuram</option>
+          <option value="Kasaragod">Kasaragod</option>
+          <option value="Wayanad">Wayanad</option>
+          <option value="Pathanamthitta">Pathanamthitta</option>
+          <option value="Idukki">Idukki</option>
+          <option value="Munnar">Munnar</option>
+          <option value="Varkala">Varkala</option>
+          <option value="Guruvayur">Guruvayur</option>
+          <option value="Kumarakom">Kumarakom</option>
+          <option value="Vagamon">Vagamon</option>
+          <option value="Thalassery">Thalassery</option>
+          <option value="Kovalam">Kovalam</option>
+          <option value="Chavakkad">Chavakkad</option>
+          <option value="Cherthala">Cherthala</option>
+          <option value="Ponnani">Ponnani</option>
+          <option value="Ottappalam">Ottappalam</option>
+          <option value="Nilambur">Nilambur</option>
+          <option value="Mananthavady">Mananthavady</option>
+          <option value="Thodupuzha">Thodupuzha</option>
+          <option value="Kalpetta">Kalpetta</option>
+          <option value="Muvattupuzha">Muvattupuzha</option>
+          <option value="Adoor">Adoor</option>
+          <option value="Kanhangad">Kanhangad</option>
+          <option value="Angamaly">Angamaly</option>
+          <option value="Pandalam">Pandalam</option>
+          <option value="Thrikkakara">Thrikkakara</option>
+          <option value="Thiruvalla">Thiruvalla</option>
+          <option value="Aluva">Aluva</option>
+          <option value="Kottayam">Kottayam</option>
+          <option value="Paravur">Paravur</option>
+          <option value="Kasargod">Kasargod</option>
+          <option value="Payyannur">Payyannur</option>
+          <option value="Kattappana">Kattappana</option>
+        </select>
+      </div>
+      
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signUp()">Sign Up</button>
+      <!-- Sign In option -->
+      <p>Already have an account ?</p>
+      <span><a href="offsignIn.html">Sign In</a></span>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

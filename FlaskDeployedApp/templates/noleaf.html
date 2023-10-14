@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+{{title}}
+{% endblock pagetitle %}
+{% block body %}
+<html>
+  <head>
+    <title>No Leaf Detected</title>
+  </head>
+  <body style="text-align:center;">
+    <h1 style="color:red; font-size: 2.5em;">No Leaf Detected</h1>
+    <p style="color:red; font-size: 2em; text-align: center;">The image you provided is not a leaf.</p>
+    <img src="{{ url_for('static', filename='/uploads/' + image_filename) }}" alt="Input image" style="display:block; margin:auto;">
+    <p style="color:darkgreen; font-size: 1.5em; text-align: justify; margin: 0 20%; background-color: white; padding: 10px;">
+      It is important to understand the seriousness of this app and the purpose it serves. The plant diseases that are detected by this app can have significant impacts on agricultural yields and food security. As such, it is important to use this app responsibly and not for fun or entertainment purposes. The details of plant diseases detected by this app are used to make important decisions, and making fun of the AI or the results it produces is not entertained. In case the app produces an incorrect diagnosis, it is recommended that the user take a photo of the leaf in a plain background, and ensure that the leaf covers at least 90% of the image. This will help ensure the accuracy of the diagnosis and prevent false results.
+      </p> </body>
+</html>
+
+{% endblock body %}

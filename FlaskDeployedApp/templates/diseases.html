@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block pagetitle %}
+Diseases
+{% endblock pagetitle %}
+
+{% block body %}
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Mail ID</th>
+      <th>Location</th>
+      <th>Disease</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <td>{{ row['username'] }}</td>
+      <td>{{ row['email'] }}</td>
+      <td>{{ row['location'] }}</td>
+      <td>{{ row['disease'] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock body %}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_df931a391a7f7c324569214b931510dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_df931a391a7f7c324569214b931510dd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_df931a391a7f7c324569214b931510dd = L.map(
+                "map_df931a391a7f7c324569214b931510dd",
+                {
+                    center: [10.8505, 76.2711],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_148a5402f81e1b75cd1ecced771d1982 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var marker_da238bbf71acc29cc1a8059d404a7284 = L.marker(
+                [9.9312, 76.2673],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_ec8fb916ab500a1cd43d0ad6c42b9e56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_da238bbf71acc29cc1a8059d404a7284.setIcon(icon_ec8fb916ab500a1cd43d0ad6c42b9e56);
+        
+    
+        var popup_191ced2c6c8b29ba60fb148463c3e3c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c5897891e07627a36462796ea8060f9 = $(`<div id="html_2c5897891e07627a36462796ea8060f9" style="width: 100.0%; height: 100.0%;">Strawberry : Leaf Scorch</div>`)[0];
+                popup_191ced2c6c8b29ba60fb148463c3e3c1.setContent(html_2c5897891e07627a36462796ea8060f9);
+            
+        
+
+        marker_da238bbf71acc29cc1a8059d404a7284.bindPopup(popup_191ced2c6c8b29ba60fb148463c3e3c1)
+        ;
+
+        
+    
+    
+            var marker_89db73cf21e17fefbb9eca5d87f8be0d = L.marker(
+                [8.5241, 76.9366],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_98dd52233d88a6aa88c6c03059e6a2b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89db73cf21e17fefbb9eca5d87f8be0d.setIcon(icon_98dd52233d88a6aa88c6c03059e6a2b7);
+        
+    
+        var popup_d1e3c76284500e3269147c909f359c02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a844d060715fbdf120999dd102ea7281 = $(`<div id="html_a844d060715fbdf120999dd102ea7281" style="width: 100.0%; height: 100.0%;">Tomato : Spider Mites | Two-Spotted Spider Mite</div>`)[0];
+                popup_d1e3c76284500e3269147c909f359c02.setContent(html_a844d060715fbdf120999dd102ea7281);
+            
+        
+
+        marker_89db73cf21e17fefbb9eca5d87f8be0d.bindPopup(popup_d1e3c76284500e3269147c909f359c02)
+        ;
+
+        
+    
+    
+            var marker_b0372b69a1f4f8ac858436dd7f16fa87 = L.marker(
+                [8.8932, 76.6141],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_b27959a5f578c8f158b10470b7136c38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b0372b69a1f4f8ac858436dd7f16fa87.setIcon(icon_b27959a5f578c8f158b10470b7136c38);
+        
+    
+        var popup_3ff6ba3153f609ff1265a9028aa2d8ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acf7170f05f569a89515bbc346705d1d = $(`<div id="html_acf7170f05f569a89515bbc346705d1d" style="width: 100.0%; height: 100.0%;">Orange : Haunglongbing | Citrus Greening</div>`)[0];
+                popup_3ff6ba3153f609ff1265a9028aa2d8ca.setContent(html_acf7170f05f569a89515bbc346705d1d);
+            
+        
+
+        marker_b0372b69a1f4f8ac858436dd7f16fa87.bindPopup(popup_3ff6ba3153f609ff1265a9028aa2d8ca)
+        ;
+
+        
+    
+    
+            var marker_65947bf2d0b6b99c808acb55e585424f = L.marker(
+                [10.5276, 76.2144],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_b786a3461709ce64c617bbcabf20ed98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_65947bf2d0b6b99c808acb55e585424f.setIcon(icon_b786a3461709ce64c617bbcabf20ed98);
+        
+    
+        var popup_60c5347bf6d12d9b66c3aa872fe6abd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1448192084097d011ab474df350f640d = $(`<div id="html_1448192084097d011ab474df350f640d" style="width: 100.0%; height: 100.0%;">Corn : Common Rust</div>`)[0];
+                popup_60c5347bf6d12d9b66c3aa872fe6abd7.setContent(html_1448192084097d011ab474df350f640d);
+            
+        
+
+        marker_65947bf2d0b6b99c808acb55e585424f.bindPopup(popup_60c5347bf6d12d9b66c3aa872fe6abd7)
+        ;
+
+        
+    
+    
+            var marker_0714e01d3800d2d8c6d8d1e1d8ac104f = L.marker(
+                [11.685, 76.0856],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_a66e1a190728fc15f6dd9bde922ed26a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0714e01d3800d2d8c6d8d1e1d8ac104f.setIcon(icon_a66e1a190728fc15f6dd9bde922ed26a);
+        
+    
+        var popup_286650023ac48680dd215423136868b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_195ca4f6aa561b746cb5abadb5718274 = $(`<div id="html_195ca4f6aa561b746cb5abadb5718274" style="width: 100.0%; height: 100.0%;">Cherry : Powdery Mildew</div>`)[0];
+                popup_286650023ac48680dd215423136868b2.setContent(html_195ca4f6aa561b746cb5abadb5718274);
+            
+        
+
+        marker_0714e01d3800d2d8c6d8d1e1d8ac104f.bindPopup(popup_286650023ac48680dd215423136868b2)
+        ;
+
+        
+    
+    
+            var marker_1e69f4d7e64f36e0fc274ecafcc936f4 = L.marker(
+                [11.8745, 75.3704],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_fcfcbc833cfdd17e7de81339da8bf8a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1e69f4d7e64f36e0fc274ecafcc936f4.setIcon(icon_fcfcbc833cfdd17e7de81339da8bf8a5);
+        
+    
+        var popup_99e510c370176e646e04970f4934cf49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_371b7992192d62b801c00cb472635019 = $(`<div id="html_371b7992192d62b801c00cb472635019" style="width: 100.0%; height: 100.0%;">Pepper bell : Bacterial Spot</div>`)[0];
+                popup_99e510c370176e646e04970f4934cf49.setContent(html_371b7992192d62b801c00cb472635019);
+            
+        
+
+        marker_1e69f4d7e64f36e0fc274ecafcc936f4.bindPopup(popup_99e510c370176e646e04970f4934cf49)
+        ;
+
+        
+    
+    
+            var marker_ba76617787e94376ff81bfb1dfc1f27a = L.marker(
+                [10.7867, 76.6548],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_ea0fc4c5ed35d625583c8f92e89e03da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ba76617787e94376ff81bfb1dfc1f27a.setIcon(icon_ea0fc4c5ed35d625583c8f92e89e03da);
+        
+    
+        var popup_aa2fa5722461d567ac3f21ee9a3df979 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3350d6375bca68a338aa0b9dff7b8078 = $(`<div id="html_3350d6375bca68a338aa0b9dff7b8078" style="width: 100.0%; height: 100.0%;">Tomato : Mosaic Virus</div>`)[0];
+                popup_aa2fa5722461d567ac3f21ee9a3df979.setContent(html_3350d6375bca68a338aa0b9dff7b8078);
+            
+        
+
+        marker_ba76617787e94376ff81bfb1dfc1f27a.bindPopup(popup_aa2fa5722461d567ac3f21ee9a3df979)
+        ;
+
+        
+    
+    
+            var marker_864d87fb451248ccba885f88c1656743 = L.marker(
+                [11.2588, 75.7804],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_2649a9066fcff15c50fec11124cdce43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_864d87fb451248ccba885f88c1656743.setIcon(icon_2649a9066fcff15c50fec11124cdce43);
+        
+    
+        var popup_a082daad0c9ac7166a58645a759a743a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99dec3813afa56d23e108df2935d155e = $(`<div id="html_99dec3813afa56d23e108df2935d155e" style="width: 100.0%; height: 100.0%;">Potato : Late Blight</div>`)[0];
+                popup_a082daad0c9ac7166a58645a759a743a.setContent(html_99dec3813afa56d23e108df2935d155e);
+            
+        
+
+        marker_864d87fb451248ccba885f88c1656743.bindPopup(popup_a082daad0c9ac7166a58645a759a743a)
+        ;
+
+        
+    
+    
+            var marker_dc249f1837f457a2bfbb27a6aee131c2 = L.marker(
+                [9.8498, 76.972],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_bbf0a84b0603d94bd0742103c1707ff0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dc249f1837f457a2bfbb27a6aee131c2.setIcon(icon_bbf0a84b0603d94bd0742103c1707ff0);
+        
+    
+        var popup_880ddda735c764576b33051c4218a798 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74df3dd12d906ab51c7f71870c228ced = $(`<div id="html_74df3dd12d906ab51c7f71870c228ced" style="width: 100.0%; height: 100.0%;">Grape : Leaf Blight | Isariopsis Leaf Spot</div>`)[0];
+                popup_880ddda735c764576b33051c4218a798.setContent(html_74df3dd12d906ab51c7f71870c228ced);
+            
+        
+
+        marker_dc249f1837f457a2bfbb27a6aee131c2.bindPopup(popup_880ddda735c764576b33051c4218a798)
+        ;
+
+        
+    
+    
+            var marker_be90effde67fd441b5ae005441853b49 = L.marker(
+                [12.4997, 74.9998],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_d5b3f2581ca6eb7b58b6578850bf8d2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be90effde67fd441b5ae005441853b49.setIcon(icon_d5b3f2581ca6eb7b58b6578850bf8d2a);
+        
+    
+        var popup_dafe1ed5dc6e544371d47d415eb553a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a9b519926bdb4de0017bf47c9af51a3 = $(`<div id="html_4a9b519926bdb4de0017bf47c9af51a3" style="width: 100.0%; height: 100.0%;">Grape : Black Rot</div>`)[0];
+                popup_dafe1ed5dc6e544371d47d415eb553a7.setContent(html_4a9b519926bdb4de0017bf47c9af51a3);
+            
+        
+
+        marker_be90effde67fd441b5ae005441853b49.bindPopup(popup_dafe1ed5dc6e544371d47d415eb553a7)
+        ;
+
+        
+    
+    
+            var marker_60f32ea3efbdf2e8397b0af5ce35bd3f = L.marker(
+                [11.8745, 75.3704],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_f653085daab7cbed2c46be4714f7d84b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_60f32ea3efbdf2e8397b0af5ce35bd3f.setIcon(icon_f653085daab7cbed2c46be4714f7d84b);
+        
+    
+        var popup_b1f7788e49d713dee24dfdc9c38c765a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f43ba7772153917c705c7c98a9ef741b = $(`<div id="html_f43ba7772153917c705c7c98a9ef741b" style="width: 100.0%; height: 100.0%;">Tomato : Target Spot</div>`)[0];
+                popup_b1f7788e49d713dee24dfdc9c38c765a.setContent(html_f43ba7772153917c705c7c98a9ef741b);
+            
+        
+
+        marker_60f32ea3efbdf2e8397b0af5ce35bd3f.bindPopup(popup_b1f7788e49d713dee24dfdc9c38c765a)
+        ;
+
+        
+    
+    
+            var marker_56e23b4b4a320ceb38e1d6c228896c4a = L.marker(
+                [11.2588, 75.7804],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_d7f95bc611c4686220a98c44d9059d02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_56e23b4b4a320ceb38e1d6c228896c4a.setIcon(icon_d7f95bc611c4686220a98c44d9059d02);
+        
+    
+        var popup_0e1c73db6b9e16cc949e662e42f25ab0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c663949aa9f95072d00aa3b48bab4c90 = $(`<div id="html_c663949aa9f95072d00aa3b48bab4c90" style="width: 100.0%; height: 100.0%;">Tomato : Leaf Mold</div>`)[0];
+                popup_0e1c73db6b9e16cc949e662e42f25ab0.setContent(html_c663949aa9f95072d00aa3b48bab4c90);
+            
+        
+
+        marker_56e23b4b4a320ceb38e1d6c228896c4a.bindPopup(popup_0e1c73db6b9e16cc949e662e42f25ab0)
+        ;
+
+        
+    
+    
+            var marker_b85a4133f2e0c11317e2dd19291e30aa = L.marker(
+                [8.5241, 76.9366],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_988e9dcf6c9ff4aaf9cb47d697388e14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b85a4133f2e0c11317e2dd19291e30aa.setIcon(icon_988e9dcf6c9ff4aaf9cb47d697388e14);
+        
+    
+        var popup_5351b3393224cc088661f3ad258d371f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_315876e8b45ea3e53c84f927cef662cf = $(`<div id="html_315876e8b45ea3e53c84f927cef662cf" style="width: 100.0%; height: 100.0%;">Potato : Early Blight</div>`)[0];
+                popup_5351b3393224cc088661f3ad258d371f.setContent(html_315876e8b45ea3e53c84f927cef662cf);
+            
+        
+
+        marker_b85a4133f2e0c11317e2dd19291e30aa.bindPopup(popup_5351b3393224cc088661f3ad258d371f)
+        ;
+
+        
+    
+    
+            var marker_84303e32f4a64553018a87b056410a07 = L.marker(
+                [8.8932, 76.6141],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_a06e1076fd00aafd6cacc3b7eee5fc8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84303e32f4a64553018a87b056410a07.setIcon(icon_a06e1076fd00aafd6cacc3b7eee5fc8e);
+        
+    
+        var popup_5858525fb439e2eb9d856e512f6e232c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e83a16182bff40d691abd9c5d50d11e = $(`<div id="html_4e83a16182bff40d691abd9c5d50d11e" style="width: 100.0%; height: 100.0%;">Strawberry : Healthy</div>`)[0];
+                popup_5858525fb439e2eb9d856e512f6e232c.setContent(html_4e83a16182bff40d691abd9c5d50d11e);
+            
+        
+
+        marker_84303e32f4a64553018a87b056410a07.bindPopup(popup_5858525fb439e2eb9d856e512f6e232c)
+        ;
+
+        
+    
+    
+            var marker_77f13bf0c4af0c6587776e3b15321fe5 = L.marker(
+                [8.8932, 76.6141],
+                {}
+            ).addTo(map_df931a391a7f7c324569214b931510dd);
+        
+    
+            var icon_6e2a2612feab54eb5ef28b88f695cc53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77f13bf0c4af0c6587776e3b15321fe5.setIcon(icon_6e2a2612feab54eb5ef28b88f695cc53);
+        
+    
+        var popup_720d395aeae762e8393b3e779ec84d54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e38fa7f81202f9c8d0b8a36a18a96677 = $(`<div id="html_e38fa7f81202f9c8d0b8a36a18a96677" style="width: 100.0%; height: 100.0%;">Strawberry : Leaf Scorch</div>`)[0];
+                popup_720d395aeae762e8393b3e779ec84d54.setContent(html_e38fa7f81202f9c8d0b8a36a18a96677);
+            
+        
+
+        marker_77f13bf0c4af0c6587776e3b15321fe5.bindPopup(popup_720d395aeae762e8393b3e779ec84d54)
+        ;
+
+        
+    
+</script>
+</html>
